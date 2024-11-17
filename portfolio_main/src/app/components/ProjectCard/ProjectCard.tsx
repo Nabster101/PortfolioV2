@@ -16,7 +16,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, so
 		<div className="container-fluid containerCard">
 			<div className="row">
 				<Link href={source} target='_blank' rel='noopener noreferrer' className='cardLink'>
-					<div className="col-4">
+					<div className="col-12 col-md-4">
 						<Image
 							src={image || 'https://via.placeholder.com/300'}
 							width={150}
@@ -25,7 +25,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, so
 							className="cardImage"
 						/>
 					</div>
-					<div className="col-8">
+					<div className="col-md-8 col-sm-12">
 						<div className="cardTitle">
 							{title}
 						</div>

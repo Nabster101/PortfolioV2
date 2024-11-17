@@ -28,3 +28,21 @@
     text-decoration: none;
     display: flex;
 }
+
+@media screen and (max-width: 768px) {
+    .cardLink{
+        flex-direction: column;
+    }
+    .cardTitle{
+        margin-top: 2rem;
+    }
+    .cardImage{
+        width: 100%;
+        height: 100%;
+    }
+    .containerCard{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+}

@@ -40,6 +40,43 @@
     overflow: auto;
 }
 
+@media screen and (max-width: 1399px){
+
+    .scrollInfo{
+        margin-left: 40%;
+        width: 60%;
+    }
+    
+}
+
+@media screen and (max-width: 1199px){
+
+    .scrollInfo{
+        margin-left: 40%;
+        width: 65%;
+    }
+    
+}
+
+@media screen and (max-width: 991px){
+
+    .subTitle{
+        text-align: justify;
+    }
+
+    .sidebar{
+        position: relative;
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .scrollInfo{
+        margin-left: 0%;
+        width: 100%;
+    }
+    
+}
+
 .colLinkProgress{
     margin: 1vh 0 1vh 0;
 }

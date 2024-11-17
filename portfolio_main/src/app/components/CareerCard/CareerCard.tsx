@@ -13,19 +13,19 @@ interface CareerCardProps {
 const CareerCard: React.FC<CareerCardProps> = ({ title, description, startDate, endDate, source }) => {
 	return (
 
-		<div className="container-fluid containerCard">
+		<div className="container-fluid containerCareerCard">
 			<div className="row">
-				<Link href={source} target='_blank' rel='noopener noreferrer' className='cardLink'>
-					<div className="col-3">
-                        <div className="dateCard">
+				<Link href={source} target='_blank' rel='noopener noreferrer' className='cardCareerLink'>
+					<div className="col-md-4 col-lg-3">
+                        <div className="dateCareerCard">
 						    {startDate} - {endDate}
                         </div>
 					</div>
-					<div className="col-9">
-						<div className="cardTitle">
+					<div className="col-sm-12 col-md-8 col-lg-9">
+						<div className="cardCareerTitle">
 							{title}
 						</div>
-						<div className="cardDescription">
+						<div className="cardCareerDescription">
 							{description}
 						</div>
 					</div>

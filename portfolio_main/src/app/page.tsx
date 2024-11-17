@@ -52,7 +52,7 @@ export default function Home() {
 					<div className="col">
 						<div className="container infoColumn">
 							<div className="row">
-								<div className={`col mainTitle ${robotoCondensed.className}`}>
+								<div className={`col-xl-12 col-lg-12 mainTitle ${robotoCondensed.className}`}>
 									<div>Pietro Costanzi Fantini</div>
 								</div>
 							</div>

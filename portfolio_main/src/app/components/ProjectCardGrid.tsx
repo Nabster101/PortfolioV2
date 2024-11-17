@@ -18,7 +18,7 @@ export default function CardGrid() {
         {cards.map((card, index) => (
           <div
             key={index}
-            className={`col projectCardWrapper ${
+            className={`col-xl-12 col-lg-12 projectCardWrapper ${
               hoveredIndex !== null && hoveredIndex !== index ? 'dimmed' : ''
             }`}
             onMouseEnter={() => setHoveredIndex(index)}
