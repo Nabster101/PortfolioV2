@@ -57,6 +57,19 @@ export default function Home() {
 				<div className="container sidebar">
 					<div className="row">
 						<div className="col">
+							<div className="logoContainer">
+								<Image 
+									className="personalLogo"
+									src={"/images/logo_personal2.jpg"}
+									alt="Personal logo"
+									width={300}
+									height={300}
+								/>
+							</div>
+						</div>
+					</div>
+					<div className="row">
+						<div className="col">
 							<div className="container infoColumn">
 								<div className="row">
 									<div className={`col-xl-12 col-lg-12 mainTitle ${robotoCondensed.className}`}>
@@ -70,7 +83,7 @@ export default function Home() {
 								</div>
 								<div className="row">
 									<div className="col subTitle">
-										<div>I like to build things on the web</div>
+										<div>I like to build cool things on the web</div>
 									</div>
 								</div>
 								<div className="row" id="progressItems">
@@ -134,7 +147,7 @@ export default function Home() {
 							<div className="container">
 								<div className="row">
 									<div className="col">
-										<Link style={{textDecoration: 'none',  color: '#94a3b8'}} target="_blank" href="https://www.linkedin.com/in/pietro-costanzi-fantini/overlay/1731863850270/single-media-viewer/?profileId=ACoAAC9uxrMB3vzRfCkvoO2Vtm5W_F02V-XIQnQ">
+										<Link style={{textDecoration: 'none',  color: '#94a3b8'}} target="_blank" href="/CV_Pietro_Costanzi_Fantini.pdf">
 											<div className='resumeButton' style={{textDecoration: 'none'}}> Full resume <FontAwesomeIcon icon={faArrowTrendUp}></FontAwesomeIcon></div>
 										</Link>
 									</div>
