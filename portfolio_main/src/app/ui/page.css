@@ -23,9 +23,82 @@
 }
 
 .testHeight{
-    height: 100vh;
+    height: 500vh;
 }
 
 .row{
     align-items: baseline;
+}
+
+.sidebar{
+    position: fixed;
+    top: 6rem;
+    width: 34%;
+    height: 100%;
+    overflow: auto;
+}
+
+.scrollInfo{
+    margin-left: 50%;
+    width: 50%;
+    overflow: auto;
+}
+
+.colLinkProgress{
+    margin: 1vh 0 1vh 0;
+}
+
+.inactiveLink {
+    font-weight: normal;
+    text-decoration: none;
+    color: #94a3b8; /* Adjust the color as needed */
+    position: relative;
+    padding-left: 65px; /* Adjust based on the maximum width of the line */
+}
+
+.inactiveLink:hover {
+    font-weight: bold;
+    color: #e2e8f0; /* Adjust the color as needed */
+}
+
+.activeLink {
+    font-weight: bold;
+    text-decoration: none;
+    color: #e2e8f0; /* Adjust the color as needed */
+    position: relative;
+    padding-left: 80px; /* Adjust based on the maximum width of the line */
+}
+
+.activeLink::after{
+    content: '';
+    position: absolute;
+    left: 0; /* Adjust the position as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 65px; /* Adjust the width as needed */
+    height: 2px; /* Adjust the height as needed */
+    background-color: #94a3b8; /* Adjust the color as needed */
+    transition: all 0.3s ease;
+}
+
+.inactiveLink::after {
+    content: '';
+    position: absolute;
+    left: 0; /* Adjust the position as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px; /* Adjust the width as needed */
+    height: 2px; /* Adjust the height as needed */
+    background-color: #94a3b8; /* Adjust the color as needed */
+    transition: all 0.3s ease;
+}
+
+.activeLink::after {
+    background-color: #e2e8f0; /* Adjust the color as needed */
+    height: 3px; /* Adjust the height as needed */
+}
+
+.inactiveLink:hover::after {
+    background-color: #e2e8f0; /* Adjust the color as needed */
+    height: 3px; /* Adjust the height as needed */
 }
