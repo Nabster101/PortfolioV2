@@ -16,12 +16,12 @@ const CareerCard: React.FC<CareerCardProps> = ({ title, description, startDate, 
 		<div className="container-fluid containerCareerCard">
 			<div className="row">
 				<Link href={source} target='_blank' rel='noopener noreferrer' className='cardCareerLink'>
-					<div className="col-md-4 col-lg-3">
+					<div className="col-md-3 col-lg-3">
                         <div className="dateCareerCard">
 						    {startDate} - {endDate}
                         </div>
 					</div>
-					<div className="col-sm-12 col-md-8 col-lg-9">
+					<div className="col-sm-12 col-md-9 col-lg-9">
 						<div className="cardCareerTitle">
 							{title}
 						</div>

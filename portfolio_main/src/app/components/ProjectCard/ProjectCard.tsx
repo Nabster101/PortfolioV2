@@ -25,7 +25,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, so
 							className="cardImage"
 						/>
 					</div>
-					<div className="col-md-8 col-sm-12">
+					<div className="col-sm-12 col-md-8">
 						<div className="cardTitle">
 							{title}
 						</div>
