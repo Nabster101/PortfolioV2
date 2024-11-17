@@ -1,0 +1,7 @@
+.resumeButton{
+    text-decoration: none;
+}
+
+.resumeButton:hover{
+    color: #e2e8f0;
+}

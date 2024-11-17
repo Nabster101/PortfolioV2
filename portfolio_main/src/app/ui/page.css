@@ -121,3 +121,8 @@
 .projectCardWrapper:hover ~ * .projectCardWrapper{
     opacity:0.3;
 }
+
+.contactIcon{
+    color: #e2e8f0;
+    font-size: 1.5rem;
+}

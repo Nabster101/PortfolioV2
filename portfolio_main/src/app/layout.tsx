@@ -3,6 +3,11 @@ import localFont from "next/font/local";
 import "@/app/ui/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css"
 import { inter } from "@/app/ui/fonts";
+import Head from "next/head";
+import "@/app/lib/fontawesome";
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,7 +32,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <title>Pietro Costanzi Fantini</title>
+      <Head>
+        <title>Pietro Costanzi Fantini</title>
+      </Head>
       <body className={`${inter.className} antialiased`}>
         {children}
       </body>
