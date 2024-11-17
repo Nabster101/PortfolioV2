@@ -18,9 +18,10 @@ import Head from "next/head";
 export default function Home() {
 
 	const [activeSection, setActiveSection] = useState('');
-  	const sectionsRef = useRef([]);
+	const sectionsRef = useRef<(HTMLElement | null)[]>([]);
 
 	useEffect(() => {
+		if (sectionsRef.current.length === 0) return; // Prevent empty array errors
 		const observer = new IntersectionObserver(
 		  (entries) => {
 			entries.forEach((entry) => {
@@ -33,7 +34,7 @@ export default function Home() {
 		);
 	
 		sectionsRef.current.forEach((section) => {
-		  observer.observe(section);
+		  if (section) observer.observe(section);
 		});
 	
 		return () => observer.disconnect();
@@ -148,7 +149,7 @@ export default function Home() {
 							<div className="container infoColumn">
 								<div className="row">
 									<div className="col subTitle">
-										<section id="about" ref={(el) => (sectionsRef.current[0] = el)} style={{paddingTop: '6.55rem'}}>
+										<section id="about" ref={(el) => {if (el) sectionsRef.current[0] = el;}} style={{ paddingTop: "6.55rem" }}>
 											<span>
 												I am a developer with a strong passion for <strong style={{color:"#e2e8f0"}}>security</strong> and <strong style={{color:"#e2e8f0"}}>IT innovations</strong>. My work focuses on crafting secure, high-performance user interfaces that are both <strong style={{color:"#e2e8f0"}}>functional</strong> and <strong style={{color:"#e2e8f0"}}>user-friendly</strong>. I am deeply involved in the intersection of development and security, designing and building solutions that adhere to industry standards.
 												<br />
@@ -166,14 +167,14 @@ export default function Home() {
 								</div>
 								<div className="row">
 									<div className="col subTitle">
-										<section id="career" ref={(el) => (sectionsRef.current[1] = el)} style={{paddingTop: '7rem'}}>
+										<section id="career" ref={(el) => { if(el) sectionsRef.current[1] = el; }} style={{paddingTop: '7rem'}}>
 											<CareerCardGrid />
 										</section>
 									</div>
 								</div>
 								<div className="row">
 									<div className="col subTitle">
-										<section id="projects" ref={(el) => (sectionsRef.current[2] = el)} style={{paddingTop: '7rem', paddingBottom: '7rem'}}>
+										<section id="projects" ref={(el) => { if(el) sectionsRef.current[2] = el; }} style={{paddingTop: '7rem', paddingBottom: '7rem'}}>
 											<ProjectCardGrid />
 										</section>
 									</div>
