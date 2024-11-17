@@ -1,0 +1,15 @@
+.projectCardWrapper {
+    transition: opacity 0.3s ease;
+    opacity: 1; 
+}
+
+.projectCardWrapper.dimmed {
+    opacity: 0.5; 
+}
+
+.projectsRow {
+    display: flex;
+    flex-direction: column;
+}
+
+  

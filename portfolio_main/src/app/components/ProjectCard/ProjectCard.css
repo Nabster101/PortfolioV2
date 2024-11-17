@@ -1,0 +1,31 @@
+.containerCard {
+    margin: 2vh 0 2vh 0;
+    padding: 3vh;
+    transition: background-color 0.3s ease, border-radius 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.containerCard:hover {
+    background-color: #162032;
+    border-radius: 10px;
+    transform: translateY(-10px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.cardImage{
+    border-radius: 10px;
+}
+
+.cardTitle{
+    color: #e2e8f0;
+}
+
+.cardDescription{
+    text-align: justify;
+    color: #94a3b8;
+    font-size: 0.8rem;
+}
+
+.cardLink{
+    text-decoration: none;
+    display: flex;
+}

@@ -26,10 +26,6 @@
     height: 500vh;
 }
 
-.row{
-    align-items: baseline;
-}
-
 .sidebar{
     position: fixed;
     top: 6rem;
@@ -51,54 +47,77 @@
 .inactiveLink {
     font-weight: normal;
     text-decoration: none;
-    color: #94a3b8; /* Adjust the color as needed */
+    color: #94a3b8; 
     position: relative;
-    padding-left: 65px; /* Adjust based on the maximum width of the line */
+    padding-left: 65px; 
 }
 
 .inactiveLink:hover {
     font-weight: bold;
-    color: #e2e8f0; /* Adjust the color as needed */
+    color: #e2e8f0; 
 }
 
 .activeLink {
     font-weight: bold;
     text-decoration: none;
-    color: #e2e8f0; /* Adjust the color as needed */
+    color: #e2e8f0; 
     position: relative;
-    padding-left: 80px; /* Adjust based on the maximum width of the line */
+    padding-left: 80px; 
 }
 
 .activeLink::after{
     content: '';
     position: absolute;
-    left: 0; /* Adjust the position as needed */
+    left: 0; 
     top: 50%;
     transform: translateY(-50%);
-    width: 65px; /* Adjust the width as needed */
-    height: 2px; /* Adjust the height as needed */
-    background-color: #94a3b8; /* Adjust the color as needed */
+    width: 65px; 
+    height: 2px; 
+    background-color: #94a3b8; 
     transition: all 0.3s ease;
 }
 
 .inactiveLink::after {
     content: '';
     position: absolute;
-    left: 0; /* Adjust the position as needed */
+    left: 0; 
     top: 50%;
     transform: translateY(-50%);
-    width: 50px; /* Adjust the width as needed */
-    height: 2px; /* Adjust the height as needed */
-    background-color: #94a3b8; /* Adjust the color as needed */
+    width: 50px; 
+    height: 2px; 
+    background-color: #94a3b8;
     transition: all 0.3s ease;
 }
 
 .activeLink::after {
-    background-color: #e2e8f0; /* Adjust the color as needed */
-    height: 3px; /* Adjust the height as needed */
+    background-color: #e2e8f0; 
+    height: 3px; 
 }
 
 .inactiveLink:hover::after {
-    background-color: #e2e8f0; /* Adjust the color as needed */
-    height: 3px; /* Adjust the height as needed */
+    background-color: #e2e8f0; 
+    height: 3px; 
+}
+
+.projectsRow{
+    display: flex;
+    flex-direction: column;
+}
+
+.projectCardWrapper {
+    transition: opacity 0.3s ease;
+    opacity: 1; 
+}
+
+.projectCardWrapper:hover {
+    opacity: 1; 
+}
+
+.projectCardWrapper:hover ~ .projectCardWrapper,
+.projectCardWrapper:hover ~ * .projectCardWrapper {
+    opacity: 0.5;
+}
+
+.projectCardWrapper:hover ~ * .projectCardWrapper{
+    opacity:0.3;
 }
