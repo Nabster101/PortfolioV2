@@ -1,0 +1,31 @@
+.infoColumn{
+	text-align: left;
+}
+
+.mainTitle{
+    font-weight: 700;
+    color: #e2e8f0;
+    font-size: 3rem;
+}
+
+.jobTitle{
+    color: #e2e8f0;
+    font-size: 1.25rem;
+}
+
+.subTitle{
+    color: #94a3b8;
+    font-size: 1rem;
+}
+
+#progressItems{
+    margin-top: 3rem;
+}
+
+.testHeight{
+    height: 100vh;
+}
+
+.row{
+    align-items: baseline;
+}
