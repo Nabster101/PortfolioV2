@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import style from "./page.module.css";
 import "@/app/ui/page.css";
 import { robotoCondensed } from "./ui/fonts";
 import Link from "next/link";
@@ -19,26 +18,47 @@ export default function Home() {
 
 	const [activeSection, setActiveSection] = useState('');
 	const sectionsRef = useRef<(HTMLElement | null)[]>([]);
+	const cursorRef = useRef(null);
 
 	useEffect(() => {
 		if (sectionsRef.current.length === 0) return; // Prevent empty array errors
 		const observer = new IntersectionObserver(
-		  (entries) => {
+			(entries) => {
 			entries.forEach((entry) => {
-			  if (entry.isIntersecting) {
+				if (entry.isIntersecting) {
 				setActiveSection(entry.target.id); 
-			  }
+				}
 			});
-		  },
-		  { threshold: 0.6 } 
+			},
+			{ threshold: 0.6 } 
 		);
-	
+
 		sectionsRef.current.forEach((section) => {
-		  if (section) observer.observe(section);
+			if (section) observer.observe(section);
 		});
-	
+
 		return () => observer.disconnect();
-	  }, []);
+	}, []);
+
+	useEffect(() => {
+		interface MouseEventWithClient extends MouseEvent {
+			clientX: number;
+			clientY: number;
+		}
+
+		const handleMouseMove = (event: MouseEventWithClient) => {
+			if (cursorRef.current) {
+			(cursorRef.current as HTMLElement).style.left = `${event.clientX}px`;
+			(cursorRef.current as HTMLElement).style.top = `${event.clientY}px`;
+			}
+		};
+
+        document.addEventListener("mousemove", handleMouseMove);
+
+        return () => {
+            document.removeEventListener("mousemove", handleMouseMove);
+        };
+    }, []);
 
 	const scrollToTop = () => {
         window.scrollTo({
@@ -54,6 +74,7 @@ export default function Home() {
                 <meta name="description" content="Portfolio of Pietro Costanzi Fantini" />
             </Head>
 			<div className="container">
+				<div ref={cursorRef} className="custom-cursor"></div>
 				<div className="container sidebar">
 					<div className="row">
 						<div className="col">

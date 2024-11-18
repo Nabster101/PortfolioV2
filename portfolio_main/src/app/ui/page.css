@@ -2,6 +2,25 @@
 	text-align: left;
 }
 
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1px; /* Increase size */
+    height: 1px; /* Increase size */
+    background-color: #090f1d; /* Softer opacity */
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+    z-index: -100;
+    box-shadow: 0 0 400px 200px #182749; 
+}
+
+.custom-cursor:hover {
+    transform: scale(1.2);
+}
+
 .logoContainer{
     margin: 0 15%;
     border: 3px solid #e2e8f0;
@@ -22,17 +41,20 @@
 }
 
 .mainTitle{
+    cursor: default;
     font-weight: 700;
     color: #e2e8f0;
     font-size: 3rem;
 }
 
 .jobTitle{
+    cursor: default;
     color: #e2e8f0;
     font-size: 1.25rem;
 }
 
 .subTitle{
+    cursor: default;
     color: #94a3b8;
     font-size: 1rem;
 }
