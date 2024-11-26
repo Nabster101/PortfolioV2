@@ -135,47 +135,50 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div className="row">
-						<div className="col">
-							<div className="container" style={{ marginTop: '2rem'}}>
-								<div className="row">
-									<div className="col-1">
-										<Link href="https://github.com/Nabster101" target="_blank">
-											<FontAwesomeIcon icon={faGithub} className="contactIcon" />
-										</Link>
+					<div className="containerEndItems">
+						<div className="row">
+							<div className="col">
+								<div className="container" id="iconContainer">
+									<div className="row" id="contactRow">
+										<div className="col-1">
+											<Link href="https://github.com/Nabster101" target="_blank">
+												<FontAwesomeIcon icon={faGithub} className="contactIcon" />
+											</Link>
+										</div>
+										<div className="col-1">
+											<Link className="contactContainerIcon" href="https://www.linkedin.com/in/pietro-costanzi-fantini/" target="_blank">
+												<FontAwesomeIcon icon={faLinkedin} className="contactIcon" />
+											</Link>
+										</div>
+										<div className="col-1">
+											<Link className="contactContainerIcon" href="https://instagram.com/pietro.costanzi" target="_blank">
+												<FontAwesomeIcon icon={faInstagram} className="contactIcon" />
+											</Link>
+										</div>
+										<div className="col-1">
+											<Link className="contactContainerIcon" href="mailto:pietrocostanzi39@gmail.com">
+												<FontAwesomeIcon icon={faEnvelope} className="contactIcon"></FontAwesomeIcon>
+											</Link>
+										</div>
 									</div>
-									<div className="col-1">
-										<Link href="https://www.linkedin.com/in/pietro-costanzi-fantini/" target="_blank">
-											<FontAwesomeIcon icon={faLinkedin} className="contactIcon" />
-										</Link>
-									</div>
-									<div className="col-1">
-										<Link href="https://instagram.com/pietro.costanzi" target="_blank">
-											<FontAwesomeIcon icon={faInstagram} className="contactIcon" />
-										</Link>
-									</div>
-									<div className="col">
-										<Link href="mailto:pietrocostanzi39@gmail.com">
-											<FontAwesomeIcon icon={faEnvelope} className="contactIcon"></FontAwesomeIcon>
-										</Link>
+								</div>
+							</div>
+						</div>
+						<div className="row" style={{alignItems:'center'}}>
+							<div className="col" id="resumeButtonText">
+								<div className="container">
+									<div className="row">
+										<div className="col">
+											<Link style={{textDecoration: 'none',  color: '#94a3b8'}} target="_blank" href="/CV_Pietro_Costanzi_Fantini.pdf">
+												<div className='resumeButton' style={{textDecoration: 'none'}}> Full resume <FontAwesomeIcon icon={faArrowTrendUp}></FontAwesomeIcon></div>
+											</Link>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div className="row">
-						<div className="col" style={{marginTop: '1.5rem'}}>
-							<div className="container">
-								<div className="row">
-									<div className="col">
-										<Link style={{textDecoration: 'none',  color: '#94a3b8'}} target="_blank" href="/CV_Pietro_Costanzi_Fantini.pdf">
-											<div className='resumeButton' style={{textDecoration: 'none'}}> Full resume <FontAwesomeIcon icon={faArrowTrendUp}></FontAwesomeIcon></div>
-										</Link>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+					
 				</div>
 				<div className="container scrollInfo">
 					<div className="row">

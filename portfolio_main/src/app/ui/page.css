@@ -59,6 +59,10 @@
     font-size: 1rem;
 }
 
+#iconContainer{
+    margin-top: 2rem;
+}
+
 #progressItems{
     margin-top: 3rem;
 }
@@ -75,10 +79,160 @@
     overflow: auto;
 }
 
+#contactRow{
+    width: 45%;
+    justify-content: space-between;
+}
+
+
 .scrollInfo{
     margin-left: 50%;
     width: 50%;
     overflow: auto;
+}
+
+#resumeButtonText{
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-height: 469px){
+    .mainTitle{
+        font-size: 1.5rem;
+    }
+    .jobTitle{
+        font-size: 0.8rem;
+    }
+    .subTitle{
+        font-size: 0.8rem;
+    }
+    #progressItems{
+        margin-top: 1rem;
+    }
+    #iconContainer{
+        margin-top: 1.5rem;
+    }
+    #resumeButtonText{
+        margin-top: 0.6rem;
+    }
+    .sidebar{
+        top: 5rem;
+    }
+}
+
+@media screen and (min-height:470px) and (max-height: 550px) {
+    .mainTitle{
+        font-size: 1.5rem;
+    }
+    .jobTitle{
+        font-size: 0.7rem;
+    }
+    .activeLink{
+        font-size: 0.8rem;
+    }
+    .inactiveLink{
+        font-size: 0.8rem;
+    }
+    .subTitle{
+        font-size: 0.7rem;
+    }
+    .sidebar{
+        top: 4rem;
+    }
+    #progressItems{
+        margin-top: 0.8rem;
+    }
+    #iconContainer{
+        margin-top: 1rem;
+    }
+    #resumeButtonText{
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }    
+    .containerEndItems{
+        display: flex;
+    }
+    #contactRow{
+        width: 80%;
+    }
+    
+}
+
+@media screen and (min-height: 551px) and (max-height: 650px){
+    .logoContainer{
+        width: 180px;
+        height: 180px;
+    }
+    .mainTitle{
+        font-size: 2rem;
+    }
+    .jobTitle{
+        font-size: 1rem;
+    }
+    .activeLink{
+        font-size: 0.8rem;
+    }
+    .inactiveLink{
+        font-size: 0.8rem;
+    }
+    .subTitle{
+        font-size: 0.8rem;
+    }
+    #progressItems{
+        margin-top: 1rem;
+    }
+    #iconContainer{
+        margin-top: 1rem;
+    }
+    #resumeButtonText{
+        font-size: 0.8rem;
+    }    
+    .sidebar{
+        top: 4rem;
+    }
+    #contactRow{
+        width: 35%;
+    }
+}
+
+@media screen and (min-height: 651px) and (max-height: 900px) {
+    .logoContainer{
+        width: 220px;
+        height: 220px;
+    }
+    .mainTitle{
+        font-size: 2.8rem;
+    }  
+    .jobTitle{
+        font-size: 1rem;
+    }
+    .subTitle{
+        font-size: 0.9rem;
+    }
+    #progressItems{
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (min-height: 901px) and (max-height: 1500px) {
+    .mainTitle{
+        font-size: 3rem;
+    }  
+    .jobTitle{
+        font-size: 1.25rem;
+    }
+    .subTitle{
+        font-size: 1rem;
+    }
+    #iconContainer{
+        margin-top: 2rem;
+    }
+    
+    #progressItems{
+        margin-top: 3rem;
+    }
+    .sidebar{
+        top: 6rem;
+    }
 }
 
 @media screen and (max-width: 1399px){
@@ -108,9 +262,6 @@
 
 @media screen and (max-width: 991px){
 
-    .subTitle{
-        text-align: justify;
-    }
 
     .sidebar{
         position: relative;
@@ -138,7 +289,18 @@
         width: 200px;
         height: 200px;
     }
+
+    #contactRow{
+        width: 70%;
+    }
     
+}
+
+@media screen and (min-width: 1500px){
+
+    #contactRow{
+        width: 25%;
+    }
 }
 
 .colLinkProgress{
