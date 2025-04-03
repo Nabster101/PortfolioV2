@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faArrowTrendUp, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react"
 
 
 
@@ -69,6 +70,7 @@ export default function Home() {
 
 	return (
 		<>
+			<Analytics />
 			<Head>
                 <title>Pietro Costanzi Fantini</title>
                 <meta name="description" content="Portfolio of Pietro Costanzi Fantini" />
