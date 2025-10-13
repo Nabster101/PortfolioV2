@@ -170,9 +170,17 @@ export default function Home() {
 											</Link>
 										</div>
 									</div>
+									<div className="row">
+										<div className="col">
+											<Link style={{textDecoration: 'none',  color: '#94a3b8'}} target="_blank" href="/Tesi_triennale_Pietro_Costanzi_Fantini_2024.pdf">
+												<span className='resumeButton' style={{textDecoration: 'none'}}> B.Sc. Thesis <FontAwesomeIcon icon={faArrowTrendUp}></FontAwesomeIcon></span>
+											</Link>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
+						
 					</div>
 					
 				</div>
