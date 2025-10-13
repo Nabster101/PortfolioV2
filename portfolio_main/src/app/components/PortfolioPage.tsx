@@ -206,16 +206,29 @@ export default function Home() {
 										</section>
 									</div>
 								</div>
-								<div className="row">
-									<div className="col subTitle">
-										<section id="career" ref={(el) => { if(el) sectionsRef.current[1] = el; }} style={{paddingTop: '7rem'}}>
-											<CareerCardGrid />
-										</section>
+								<div className="row" style={{marginTop:'6rem', marginBottom:'4rem'}}>
+									<div className="col d-flex align-items-center">
+										<span className="sectionSeparatorTitle" style={{ marginRight: "1rem" }}>Education</span>
+										<span className="sectionSeparator" style={{ flex: 1 }}></span>
 									</div>
 								</div>
 								<div className="row">
 									<div className="col subTitle">
-										<section id="projects" ref={(el) => { if(el) sectionsRef.current[2] = el; }} style={{paddingTop: '7rem', paddingBottom: '7rem'}}>
+										<section id="career" ref={(el) => { if(el) sectionsRef.current[1] = el; }}>
+											<CareerCardGrid />
+										</section>
+									</div>
+								</div>
+								<div className="row" style={{marginTop:'6rem', marginBottom:'4rem'}}>
+									<div className="col d-flex align-items-center">
+										<span className="sectionSeparatorTitle" style={{ marginRight: "1rem" }}>Projects</span>
+										<span className="sectionSeparator" style={{ flex: 1 }}></span>
+									</div>
+								</div>
+								<div className="w-100 d-none d-xl-block d-lg-block d-md-block d-sm-block d-xs-block" style={{ height: '2rem', color: '#e2e8f0' }}>Data Science</div>
+								<div className="row">
+									<div className="col subTitle">
+										<section id="projects" ref={(el) => { if(el) sectionsRef.current[2] = el; }} style={{paddingBottom: '7rem'}}>
 											<ProjectCardGrid />
 										</section>
 									</div>
