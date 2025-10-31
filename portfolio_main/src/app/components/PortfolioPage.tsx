@@ -23,13 +23,19 @@ export default function Home() {
 		if (sectionsRef.current.length === 0) return; // Prevent empty array errors
 		const observer = new IntersectionObserver(
 			(entries) => {
-			entries.forEach((entry) => {
-				if (entry.isIntersecting) {
-				setActiveSection(entry.target.id); 
-				}
-			});
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						setActiveSection(entry.target.id);
+					} else if (entry.target.id === activeSection) {
+						// Only unset if this section was active and is now not intersecting
+						setActiveSection('');
+					}
+				});
 			},
-			{ threshold: 0.6 } 
+			{ 
+				threshold: 0.2,
+				rootMargin: '-10% 0px -10% 0px'
+			}
 		);
 
 		sectionsRef.current.forEach((section) => {
@@ -206,7 +212,7 @@ export default function Home() {
 										</section>
 									</div>
 								</div>
-								<div className="row" style={{marginTop:'6rem', marginBottom:'4rem'}}>
+								<div className="row" id="career" style={{paddingTop:'6rem', marginBottom:'4rem'}}>
 									<div className="col d-flex align-items-center">
 										<span className="sectionSeparatorTitle" style={{ marginRight: "1rem" }}>Education</span>
 										<span className="sectionSeparator" style={{ flex: 1 }}></span>
@@ -219,7 +225,7 @@ export default function Home() {
 										</section>
 									</div>
 								</div>
-								<div className="row" style={{marginTop:'6rem', marginBottom:'4rem'}}>
+								<div className="row" id="projects" style={{paddingTop:'4rem', marginBottom:'6rem'}}>
 									<div className="col d-flex align-items-center">
 										<span className="sectionSeparatorTitle" style={{ marginRight: "1rem" }}>Projects</span>
 										<span className="sectionSeparator" style={{ flex: 1 }}></span>
