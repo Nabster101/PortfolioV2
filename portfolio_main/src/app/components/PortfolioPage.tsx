@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faArrowTrendUp, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 export default function Home() {
@@ -75,6 +76,7 @@ export default function Home() {
 	return (
 		<>
 			<Analytics />
+			<SpeedInsights />
 			<div className="container">
 				<div ref={cursorRef} className="custom-cursor"></div>
 				<div className="container sidebar">
