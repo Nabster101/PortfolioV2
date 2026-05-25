@@ -22,7 +22,7 @@ const geistMono = localFont({
 export const metadata = {
   title: "Pietro Costanzi Fantini",
   description: "Portfolio of Pietro Costanzi Fantini",
-  keywords: "portfolio, developer, security, Pietro Costanzi Fantini",
+  keywords: "portfolio, developer, motorsport, security, Pietro Costanzi Fantini",
 };
 
 export default function RootLayout({
