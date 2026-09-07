@@ -88,6 +88,7 @@ export default function Home() {
 									className="personalLogo"
 									src={"/images/logo_personal2.jpg"}
 									alt="Personal logo"
+									loading="eager"
 									width={300}
 									height={300}
 								/>
@@ -201,11 +202,11 @@ export default function Home() {
 									<div className="col subTitle">
 										<section id="about" ref={(el) => {if (el) sectionsRef.current[0] = el;}} style={{ paddingTop: "6.55rem" }}>
 											<span>
-												I am a developer with a strong passion for <strong style={{color:"#e2e8f0"}}>motorsport</strong>, <strong style={{color:"#e2e8f0"}}>security</strong> and <strong style={{color:"#e2e8f0"}}>IT innovations</strong>. My work focuses on crafting secure, high-performance user interfaces that are both <strong style={{color:"#e2e8f0"}}>functional</strong> and <strong style={{color:"#e2e8f0"}}>user-friendly</strong>. I am deeply involved in the intersection of development and security, designing and building solutions that adhere to industry standards.
+												I am a developer with a strong passion for <strong style={{color:"#e2e8f0"}}>motorsport</strong>, <strong style={{color:"#e2e8f0"}}>security</strong> and <strong style={{color:"#e2e8f0"}}>IT innovations</strong>. I am deeply involved in the intersection of development and security, designing and building solutions that adhere to industry standards.
 												<br />
 												<br />
-												I am a <strong style={{color:"#e2e8f0"}}>Computer Science Master's student</strong> specializing in <strong style={{color:"#e2e8f0"}}>big data management</strong>, <strong style={{color:"#e2e8f0"}}>cybersecurity</strong>, and <strong style={{color:"#e2e8f0"}}>distributed systems</strong>. Currently, I am completing my <strong style={{color:"#e2e8f0"}}>Master's thesis</strong> through an <strong style={{color:"#e2e8f0"}}>internship at Toyota Racing</strong>, where I apply my academic focus to real-world engineering challenges. 
-												My technical foundation is rooted in a <strong style={{color:"#e2e8f0"}}>Computer Engineering Bachelor's degree</strong>, giving me a deep understanding of <strong style={{color:"#e2e8f0"}}>algorithms</strong>, <strong style={{color:"#e2e8f0"}}>embedded systems</strong>, and <strong style={{color:"#e2e8f0"}}>network infrastructures</strong>. In practice, I build robust data pipelines and scalable applications using modern technologies like <strong style={{color:"#e2e8f0"}}>Apache Kafka</strong>, <strong style={{color:"#e2e8f0"}}>Apache Flink</strong>, and <strong style={{color:"#e2e8f0"}}>Docker</strong>. Beyond my core studies, I am actively exploring the development of <strong style={{color:"#e2e8f0"}}>biometric systems</strong> and the underlying architecture of the <strong style={{color:"#e2e8f0"}}>Bitcoin blockchain</strong>.
+												I am a <strong style={{color:"#e2e8f0"}}>Computer Science Master's student</strong> specializing in the use of <strong style={{color:"#e2e8f0"}}>big data management</strong>, <strong style={{color:"#e2e8f0"}}>cloud services</strong>, <strong style={{color:"#e2e8f0"}}>cybersecurity</strong>, and <strong style={{color:"#e2e8f0"}}>distributed systems</strong>. Currently, I am completing my <strong style={{color:"#e2e8f0"}}>Master's thesis</strong> through an <strong style={{color:"#e2e8f0"}}>internship at Toyota Racing</strong>, where I apply my academic focus to real-world engineering challenges. 
+												My technical foundation is rooted in a <strong style={{color:"#e2e8f0"}}>Computer Engineering Bachelor's degree</strong>, giving me a deep understanding of <strong style={{color:"#e2e8f0"}}>algorithms</strong>, <strong style={{color:"#e2e8f0"}}>embedded systems</strong>, and <strong style={{color:"#e2e8f0"}}>network infrastructures</strong>. In practice, I build robust data pipelines and scalable applications using modern technologies like <strong style={{color:"#e2e8f0"}}>Apache Kafka</strong>, <strong style={{color:"#e2e8f0"}}>Apache Flink</strong>, <strong style={{color:"#e2e8f0"}}>Kubernetes</strong> and <strong style={{color:"#e2e8f0"}}>Docker</strong>. Beyond my core studies, I am actively exploring the development of biometric systems and the underlying architecture of the Bitcoin blockchain.
 
 												<br />
 												<br />
